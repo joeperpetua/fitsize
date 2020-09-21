@@ -1,0 +1,35 @@
+.blue{
+    color: #2850E2;
+}
+
+.black{
+    color: #141115;
+}
+
+.red{
+    color: red;
+}
+
+.white{
+    color: #FFFFFF;
+}
+
+.cream{
+    color: #eaece9;
+}
+
+.bg-blue{
+    background-color: #2850E2;
+}
+
+.bg-red{
+    background-color: #cc321a;
+}
+
+.bg-black{
+    background-color: #141115;
+}
+
+.bg-white{
+    background-color: #FFFFFF;
+}

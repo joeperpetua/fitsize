@@ -1,0 +1,474 @@
+/* Fonts */
+@font-face {
+    font-family: Nunito;
+    src: url('../fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: NunitoLight;
+    src: url('../fonts/Nunito-Light.ttf');
+}
+
+@font-face {
+    font-family: NunitoBold;
+    src: url('../fonts/Nunito-Bold.ttf');
+}
+
+
+*{
+    font-family: 'Nunito';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    color: #141115;
+}
+
+
+/* Font Sizes */
+h1{
+    font-size: 3.2em;
+}
+
+p{
+    font-size: 1.3em;
+}
+
+
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.nav{
+    flex-flow: row-reverse;
+    min-height: 70px;
+    --text-fade-color: rgba(0, 0, 0, 0.7);
+    position: sticky;
+}
+
+.nav .nav-item a::after{
+    background: red;
+}
+
+.nav-expand{
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    margin: 70px auto 0 auto;
+    padding: 0;
+}
+
+.nav .nav-item a{
+    margin: 0 auto;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+.nav-brand{
+    position: absolute;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    height: -webkit-fill-available;
+    height: -moz-available;
+    height: stretch;
+}
+
+.nav-brand img{
+    max-height: 45px;
+}
+
+.nav-brand a {
+    font-family: 'NunitoBold';
+    padding: 14px!important;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggler{
+    position: absolute;
+    right: 30px;
+    top: 23px;
+}
+
+.hero{
+    --carousel-width: 100%;
+}
+
+.hero .carousel-inner{
+    height: 140vh;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(40,80,226,1) 0%, rgba(40,181,226,1) 100%); */
+    background-image: url('../img/mobile-landing.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 0;
+}
+
+.hero h3{
+    font-size: 6vw;
+    margin: 30vh 0 0 0;
+}
+
+.hero a{
+    font-weight: bold;
+}
+
+.hero .btn{
+    font-size: 7vw;
+    text-decoration: none;
+    max-width: 200px;
+    margin: 2% auto 0 auto;
+}
+
+section{
+    padding: 2% 7% 7% 7%;
+}
+
+section h1{
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 3% auto 0 auto;
+}
+
+.step{
+    flex-direction: column;
+    height: 70vh;
+    margin: 15% 0 3% 0;
+}
+
+.step-item {
+    align-self: center;
+    width: 100%;
+}
+
+.step-item__node {
+    display: flex;
+    align-items: center;
+    padding: 0 55px;
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
+    margin: 0 auto;
+}
+
+.step-item__node::after {
+    display: none;
+}
+
+.step-item__content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    left: unset;
+    text-align: center;
+    width: 250px;
+}
+
+.step-item, .step-item:last-child {
+    max-width: 250px;
+}
+
+.step-item__desc {
+    margin-top: 4px;
+    font-size: 22px;
+    text-align: center;
+    transition: .3s;
+    font-weight: bold;
+}
+
+.mobile-hero{
+    padding: 2% 7%;
+    column-count: 2;
+    column-gap: 5%;
+    column-width: 320px;
+    background: rgb(2,0,36);
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(40,80,226,1) 0%, rgba(40,181,226,1) 100%);
+}
+
+.frame{
+    --carousel-width: 200px;
+    --carousel-height: 400px;
+    --carousel-link-width: 8px;
+    --carousel-link-margin: 8px;
+    --carousel-link-color: black;
+    margin: 0 auto;
+}
+
+.img{
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 0 auto;
+}
+
+.gauges{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.gauges h2, .gauges p{
+    text-align: center;
+}
+
+.gauges img{
+    max-width: 40%;
+}
+
+.gauges div{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    margin: 8% 3%;
+}
+
+.gauge{
+    height: 150px;
+    width: 150px;
+}
+
+.gauge::before{
+    font-size: xx-large;
+}
+
+.profile-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: rgba(40,181,226,1) solid 3px;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.profile-container-img{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container-img img{
+    height: 300px;
+    border-radius: 10px;
+}
+
+footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7%;
+    background: rgb(2,0,36);
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(40,80,226,1) 0%, rgba(40,181,226,1) 100%);
+}
+
+footer div{
+    align-items: center;
+    width: 80%;
+}
+
+footer div ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+footer h1{
+    margin: 0.67em 0 0 0;
+}
+
+footer a{
+    color: #141115;
+    text-decoration-line: none;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.social-media a{
+    color: black;
+    font-size: 2em;
+    
+}
+
+
+
+/* Helpers */
+.none{
+    display: none;
+}
+
+#goUp{
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    z-index: 1;
+    border: 1px solid #2850E2;
+}
+
+.chevron-icon.up {
+    margin: 8px 13px;
+}
+
+.sm{
+    display: flex;
+}
+
+.sm h3{
+    font-size: 8.5vw;
+}
+
+.xl{
+    display: none;
+}
+
+.arrow-xl{
+    display: none;
+    font-size: 36px;
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
+    width: max-content;
+    margin: 0 auto;
+}
+
+.arrow-sm{
+    display: block;
+    font-size: 36px;
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
+    width: max-content;
+    margin: 50px auto;
+}
+
+@media screen and (min-width: 720px){
+    .nav-expand{
+        display: flex;
+        flex-flow: row;
+        margin: 0;
+    }
+
+    .nav-toggler{
+        display: none;
+    }
+    
+    .hero h3{
+        font-size: 2.7vw;
+    }
+
+    .hero .btn{
+        font-size: 1.7vw;
+    }
+
+    .hero .carousel-inner{
+        height: 90vh;
+        /* background: rgb(2,0,36);
+        background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(40,80,226,1) 0%, rgba(40,181,226,1) 100%); */
+        background-image: url('../img/landing-low.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 2%;
+    }
+
+
+    .step{
+        flex-direction: row;
+        justify-content: space-around;
+        height: 30vh;
+        margin: 3% 0 3% 0;
+    }
+    
+    .step-item {
+        align-self: center;
+        width: 100%;
+    }
+    
+    
+    .step-item__content {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        left: unset;
+        text-align: center;
+        width: 300px;
+    }
+    
+    .step-item, .step-item:last-child {
+        max-width: 300px;
+    }
+    
+    
+    .step-item__desc {
+        margin-top: 12px;
+        font-size: 20px;
+        transition: .3s;
+    }
+
+    .mobile-hero h2{
+        margin-bottom: 42%;
+    }
+
+    .gauges{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .gauges p{
+        font-size: 1.1em;
+    }
+    
+    .gauges div{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 33%;
+    }
+
+    .profile-container{
+        flex-flow: row;
+    }
+
+    .profile-container-img{
+        flex-flow: row;
+    }
+
+    .sm{
+        display: none;
+    }
+
+    .xl{
+        display: flex;
+    }
+
+    .arrow-xl{
+        display: block;
+    }
+    
+    .arrow-sm{
+        display: none;
+    }
+}

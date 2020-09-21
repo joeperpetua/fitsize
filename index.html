@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/@alphardex/aqua.css/dist/aqua.min.css">
+    <link rel="stylesheet" href="css/aqua.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/colors.css">
+
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="64x64">
+    <title>FitSize</title>
+</head>
+<body>
+  <nav class="bg-white">
+    <ul class="nav">
+      <li class="nav-item nav-brand">
+        <a class="nav-link" href="#">
+          <img src="img/logo.png" alt="">
+        </a>
+      </li>
+
+      <ul class="nav-expand none" id="nav-expand">
+        <li class="nav-item">
+          <a class="nav-link nav-el" href="#solution" name="nav-el">Solution</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-el" href="#benefices" name="nav-el">Bénéfices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-el" href="#about" name="nav-el">Qui sommes nous</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-el" href="#contact" name="nav-el">Contact</a>
+        </li>
+      </ul>
+
+      <li class="nav-item nav-toggler" id="nav-toggler">
+        <i class="chevron-icon down nav-link" id="toggler-icon"></i>
+      </li>
+    </ul>
+  </nav>
+
+  <header class="carousel hero">
+    <div class="carousel-inner xl">
+      <!-- <h3>Stopez les retours,<br>optez pour <span class="red">FitSize !</span></h3> -->
+      <br><br><br>
+      <h3></h3>
+      <a href="#contact" class="btn bg-white black btn-round">L'obtenir</a>
+    </div>
+    <div class="carousel-inner sm">
+      <!-- <h3>Stopez les retours,<br>optez pour <span class="red">FitSize !</span></h3> -->
+      <br><br><br>
+      <h3></h3>
+      <a href="#contact" class="btn bg-white black btn-round">L'obtenir</a>
+    </div>
+  </header>
+  
+  <a href="#top" class="btn bg-blue btn-circle none " id="goUp">
+    <i class="chevron-icon up white"></i>
+  </a>
+  
+
+  <span id="solution"></span>
+  <br>
+  
+  <section>
+    <h1>La solution Fitsize</h1>
+    
+    <p>
+      La norme n'existe pas. C'est pourquoi choisir la bonne taille en ligne est compliqué. 
+      Fitsize est la pour vous aider.</p>
+  
+      <ul class="step">
+        <li class="step-item active">
+          <!-- <div class="step-item__desc black">
+            Prenez en photo le vêtement que vous portez le mieux.
+          </div> -->
+          <div class="step-item__desc black">
+            Installez le Plug-in Fitsize
+          </div>
+        </li>
+        <li class="step-item active">
+          <div class="step-item__desc">
+            <i class="fas fa-angle-double-right arrow-xl blue"></i>
+            <i class="fas fa-angle-double-down arrow-sm blue"></i>
+          </div>
+        </li>
+        <li class="step-item active">
+          <!-- <div class="step-item__desc black">
+            Sélectionnez la taille correspondante.
+          </div> -->
+          <div class="step-item__desc black">
+            Il recommande à vos clients la bonne taille
+          </div>
+        </li>
+        <li class="step-item active">
+          <div class="step-item__desc">
+            <i class="fas fa-angle-double-right arrow-xl red"></i>
+            <i class="fas fa-angle-double-down arrow-sm red"></i>
+          </div>
+        </li>
+        <li class="step-item active">
+          <!-- <div class="step-item__desc black">
+            Commandez !
+          </div> -->
+          <div class="step-item__desc black">
+            <span class="blue">Fidélisez</span> votre client
+            <hr class="divider xl">
+            <span class="red">Augmentez</span> vos ventes
+            <hr class="divider xl">
+            <span class="blue">Diminuez</span> vos retours
+            <hr class="divider xl">
+            <span class="red">Ameliorez</span> votre RSE
+          </div>
+        </li>
+      </ul>
+  </section>
+
+  <div class="mobile-hero">
+    <h1>Optimisé pour mobile</h1>
+  
+    <p>1 achat sur 2 est effectué sur mobile. Offrez à vos clients la même expérience peu importe d'où ils achètent.</p>
+    
+    <h2 id="slide-title">Text 1</h2>
+    <!-- <div class="img">
+      <img src="img/mobile-view-frame.png" alt="mobile-view" height="400px" width="auto">
+    </div> -->
+
+    <div class="slider">
+      <a href="#slide-1">1</a>
+      <a href="#slide-2">2</a>
+      <a href="#slide-3">3</a>
+      <a href="#slide-4">4</a>
+      <a href="#slide-5">5</a>
+
+    
+      <div class="slides">
+        <div id="slide-1">
+          <img src="img/mobile-view-frame.png" alt="img1">
+        </div>
+        <div id="slide-2">
+          <img src="img/pantalon.png" alt="img2">
+        </div>
+        <div id="slide-3">
+          <img src="img/chaussure-frame.png" alt="img3">
+        </div>
+        <div id="slide-4">
+          <img src="img/LUNNETES.png" alt="img4">
+        </div>
+        <div id="slide-5">
+          <img src="img/bagues.png" alt="img5">
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <span id="benefices"></span>
+  <br>
+
+
+  <section>
+    <h1>Bénéfices</h1>
+    <div class="gauges">
+      <div>
+        <img src="img/ben1.png">
+        <h2>Un meilleur impact écologique et social</h2>
+        <p lang="fr">En réduisant vos retours, vous réduisez votre impact carbone et améliorez votre politique de
+           responsabilité sociétale.</p>
+           <br class="xl"><br class="xl"><br class="xl">
+      </div>
+
+      <div>
+        <img src="img/ben2.png">
+        <h2>Plus de bénéfices</h2>
+        <p lang="fr">Les retours vêtement prennent du temps et nécessitent de la logistique et beaucoup de frais. 
+          Diminuez ces derniers et réduisez les coûts liés aux retours, augmentez vos bénéfices.</p>
+      </div>
+      
+      <div>
+        <img src="img/ben3.png">
+        <h2>Une plus grande fidélisation</h2>
+        <p lang="fr">En offrant à vos clients une solution gratuite, précise et simple d'utilisation, vous améliorez 
+          leur expérience sur votre site. Renforcez alors votre relation : client heureux est un client qui reviendra.</p>
+      </div>
+    </div>
+
+    <p></p>
+  </section>
+
+  <span id="about"></span>
+  <br>
+  <section>
+    <h1>Qui sommes nous</h1>
+    <!-- <p>
+      &nbsp;Fitsize est une solution de sizing en ligne. Elle permet à l’utilisateur de se faire
+      recommander la taille juste lorsqu’il commande un vêtement en ligne. 
+      <br>
+      &nbsp;On se différencie de ses concurrents par sa prise de mesure à distance et permet la
+      sélection immédiate de la bonne taille. 
+      <br>
+      &nbsp;Cette solution peut également toucher les
+      personnes touchées par le handicap ou dans le milieu hospitalier. La solution se
+      transpose également sur les chaussures, bagues, gants, chapeaux.
+      <br>
+      &nbsp;Les dimensions de comparaison seront calculées automatiquement. S’il y a besoin d’ajustement,
+      Fitsize propose également des retouches, qui seront effectuées avant que vous
+      receviez votre vêtement.
+    </p>
+    <hr class="divider"> -->
+    <br>
+    <div class="profile-container-img">
+      <img src="img/fidel.png" alt="image eya'a fidel">
+      &nbsp;&nbsp;&nbsp;
+      <img src="img/militaire.png" alt="veste militaire">
+    </div>
+    <br>
+    <div class="profile-container">
+      <img src="img/logo.png" alt="logo" height="100px">
+      <p>
+        Eya’a Fidèle Maître Tailleur Militaire.
+        <br>
+        Diplomé par le Maître Tailleur Militaire Jean  Obis, à L’École Militaire de Paris.
+      </p>
+    </div>
+    <br>
+    <div class="profile-container-img">
+      <img src="img/010.jpg" alt="veste militaire">
+      &nbsp;&nbsp;&nbsp;
+      <img src="img/225.jpg" alt="veste militaire">
+      &nbsp;&nbsp;&nbsp;
+      <img src="img/851.jpg" alt="veste militaire">
+      &nbsp;&nbsp;&nbsp;
+      <img src="img/556.jpg" alt="veste militaire">
+    </div>
+    <br>
+    <p>
+      Après une longue carrière de Maitre Tailleur militaire, M. EYA’A s’est rendu compte de la digitalisation de ce métier.
+      <br>
+      C’est pour cette raison que M. EYA’A a voulu apporter la solution de sizing en ligne la plus juste possible.</p>
+    <p>Lui a également mené plusieurs projets au service de la communauté comme :</p>
+
+    <br>
+    <ul>
+      <li>
+        <h2>Blouse Masque Vie</h2>
+        <p>Apprendre à coudre, Blouse Masque Vie dans nos villes.</p>
+        <a href="https://sites.google.com/view/blouse-masque-vie/">Site Web Blouse Masque Vie</a>
+      </li>
+      <br><br>
+      <li>
+        <h2>Swing PMR</h2>
+        <p>L'association est dénommée "SWING  PMR". Elle a principalement pour but : la sensibilisation à tout et 
+          pour tous, en particulier les personnes avec un handicap, pour l'égalité de droit et chance. Elle vise 
+          à l'étude d'accessibilité universelle des personnes handicapées par la conception, la réalisation et la 
+          diffusion d'outil numérique et digital sur Smartphone et objets connectés.</p>
+          <a href="https://swing-pmr.web.app/">Site Web Swing PMR</a>
+      </li>
+    </ul>
+    
+  </section>
+
+  <span id="contact"></span>
+  <br>
+  <footer>
+    <div>
+      <ul>
+        <li><h1>FitSize</h1></li>
+        <li>La recommandation de taille en ligne la plus précise du marché.</li>
+        <br>
+        <li><a href="mailto:contact.fitsize@gmail.com">contact.fitsize@gmail.com</a></li>
+        <li><a href="tel:+33 06 15 48 74 12">06 15 48 74 12</a></li>
+      </ul>
+    </div>
+    <br>
+    <div>
+      <ul class="social-media">
+        <li><a href="https://www.facebook.com/fitsizefr"><i class="fab fa-facebook-square white"></i></a></li>
+        <li><a href="https://www.instagram.com/fitsizefr/"><i class="fab fa-instagram white"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in white"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/mobile-text.js"></script>
+</body>
+</html>
