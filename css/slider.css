@@ -58,9 +58,9 @@
     font-size: 100px;
 }
 
-.slides > div:target {
-  /*   transform: scale(0.8); */
-}
+/* .slides > div:target {
+    transform: scale(0.8);
+} */
 
 .author-info {
     background: rgba(0, 0, 0, 0.75);
@@ -87,7 +87,7 @@
     height: 100%;
 }
   
-  .slider > a {
+.slider > a {
     display: inline-flex;
     width: 1.5rem;
     height: 1.5rem;
@@ -98,17 +98,19 @@
     border-radius: 50%;
     margin: 0 0 0.5rem 0;
     position: relative;
-  }
-  .slider > a:active {
+}
+
+.slider > a:active {
     top: 1px;
-  }
-  .slider > a:focus {
+}
+
+.slider > a:focus {
     background: #000;
-  }
+}
   
   /* Don't need button navigation */
-  @supports (scroll-snap-type) {
-    .slider > a {
-      display: none;
-    }
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
   }
+}

@@ -426,9 +426,9 @@ footer a{
         transition: .3s;
     }
 
-    /* #slide-desc{
-        margin-bottom: 42%;
-    } */
+    #slide-desc{
+        margin-bottom: 10%;
+    }
 
     .gauges{
         display: flex;
