@@ -1,5 +1,4 @@
-window.onload = () => {
-
+let init = () => {
     //nav
     let expanded = false;
     let navExpand = document.getElementById('nav-expand');
@@ -56,4 +55,6 @@ window.onload = () => {
             btn.classList.add('bounceOutRight'); 
         }
     }
-};
+}
+
+window.onload = init();
